@@ -1,0 +1,9 @@
+version: "1.0"
+
+
+services:
+  fastapi_app:
+    image: fastapi-test
+    ports:
+      - 8000:8000
+    restart: always
