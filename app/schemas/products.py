@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from schemas.calloria import CalorieBase,CalorieUpdate
+from app.schemas.calloria import CalorieBase,CalorieUpdate
 
 
 class ProductsBase(BaseModel):

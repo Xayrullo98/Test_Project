@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
-from functions.discount import all_discounts, add_discount, update_discounts, delete_discount
+from app.functions.discount import all_discounts, add_discount, update_discounts, delete_discount
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
-from schemas.discount import DiscountBase, DiscountUpdate
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
+from app.schemas.discount import DiscountBase, DiscountUpdate
 
 discount_router = APIRouter()
 

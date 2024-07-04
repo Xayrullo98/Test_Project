@@ -3,11 +3,11 @@ import typing
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
-from functions.products import all_product, add_product, update_product, delete_product
+from app.functions.products import all_product, add_product, update_product, delete_product
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
 
 product_router = APIRouter()
 

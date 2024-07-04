@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Calorie
-from utils.pagination import pagination
+from app.models.calloria import Calorie
+from app.utils.pagination import pagination
 
 
 def all_calorie(active, search, page, limit, db):

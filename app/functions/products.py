@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Products
-from utils.pagination import pagination
+from app.models.products import Products
+from app.utils.pagination import pagination
 
 
 def all_product(active, search, page, limit, db):

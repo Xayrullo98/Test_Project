@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from app.functions.calloria import all_calorie, add_calorie, update_calorie, delete_calorie
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
-from schemas.calloria import CalorieBase, CalorieUpdate
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
+from app.schemas.calloria import CalorieBase, CalorieUpdate
 
 calorie_router = APIRouter()
 

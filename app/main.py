@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 
-from routes import auth,users,restaurants,products,order,calloria,trade,discount,meals,menu
+from app.routes import auth,users,restaurants,products,order,calloria,trade,discount,meals,menu
 
-from db import Base, engine
+from app.db import Base, engine
 
 Base.metadata.create_all(bind=engine)
 

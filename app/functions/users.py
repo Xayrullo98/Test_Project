@@ -1,8 +1,8 @@
 from fastapi import HTTPException
 
-from app.models import Users
-from routes.auth import get_password_hash
-from utils.pagination import pagination
+from app.models.users import Users
+from app.routes.auth import get_password_hash
+from app.utils.pagination import pagination
 
 
 def all_users(search,active, roll, page, limit, db):

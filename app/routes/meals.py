@@ -3,11 +3,11 @@ import typing
 
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
-from functions.meals import all_meals, add_meal, delete_meal
+from app.functions.meals import all_meals, add_meal, delete_meal
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
 
 meals_router = APIRouter()
 

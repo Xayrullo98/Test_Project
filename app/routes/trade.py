@@ -1,12 +1,12 @@
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from functions.trade import all_trade, add_trade, update_trade, delete_trade
+from app.functions.trade import all_trade, add_trade, update_trade, delete_trade
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
-from schemas.trade import TradeBase, TradeUpdate
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
+from app.schemas.trade import TradeBase, TradeUpdate
 
 trade_router = APIRouter()
 

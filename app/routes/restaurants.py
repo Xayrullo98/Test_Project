@@ -1,12 +1,12 @@
 
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from functions.restaurants import all_restaurants, add_restaurant, update_restaurants, delete_restaurant
+from app.functions.restaurants import all_restaurants, add_restaurant, update_restaurants, delete_restaurant
 from app.db import get_db
 
-from routes.auth import get_current_active_user
-from schemas.users import UserCurrent
-from schemas.restaurants import RestaurantBase, RestaurantUpdate
+from app.routes.auth import get_current_active_user
+from app.schemas.users import UserCurrent
+from app.schemas.restaurants import RestaurantBase, RestaurantUpdate
 
 restaurant_router = APIRouter()
 

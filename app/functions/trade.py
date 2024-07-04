@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Trades
-from utils.pagination import pagination
+from app.models.trade import Trades
+from app.utils.pagination import pagination
 
 
 def all_trade(active, search, page, limit, db):

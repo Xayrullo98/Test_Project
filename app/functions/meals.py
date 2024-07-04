@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Meals
-from utils.pagination import pagination
+from app.models.meals import Meals
+from app.utils.pagination import pagination
 
 
 def all_meals(active, search, page, limit, db):

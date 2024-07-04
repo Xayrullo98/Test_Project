@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Discount
-from utils.pagination import pagination
+from app.models.discount import Discount
+from app.utils.pagination import pagination
 
 
 def all_discounts(active, search, page, limit, db):

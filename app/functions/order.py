@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 
-from app.models import Orders
-from utils.pagination import pagination
+from app.models.order import Orders
+from app.utils.pagination import pagination
 
 
 def all_orders(active, search, page, limit, db):
